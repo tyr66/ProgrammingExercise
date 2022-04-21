@@ -5,7 +5,7 @@ using namespace std;
 
 long long memory[1001];
 
-long long slove(int n)
+long long solve(int n)
 {
     int half_n = n >> 1;
     long long res = 1;
@@ -18,7 +18,7 @@ long long slove(int n)
 
 
     for (int i = 1; i <= half_n;i++)
-        res += slove(i);
+        res += solve(i);
 
     memory[n] = res;
 
@@ -30,7 +30,7 @@ int main()
     int n;
     cin >> n;
 
-    cout << slove(n)<<endl;
+    cout << solve(n)<<endl;
 
     return 0;
 }

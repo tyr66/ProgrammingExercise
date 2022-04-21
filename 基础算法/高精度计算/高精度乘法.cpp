@@ -41,7 +41,7 @@ int decompose(const string& src,char tar[],int len)
     return i;
 }
 
-void slove(const string& a,const string& b)
+void solve(const string& a,const string& b)
 {
     
     int a_len, b_len;
@@ -115,7 +115,7 @@ void slove(const string& a,const string& b)
     string a, b;
     cin >> a >> b;
 
-    slove(a,b);
+    solve(a,b);
 
     return 0;
 } 

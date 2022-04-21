@@ -108,7 +108,7 @@ void addZero(char*arr,int sz,int step)
 
 }
 
-void slove(const string&a,const string&b)
+void solve(const string&a,const string&b)
 {
     memset(arr_quotient,0,sizeof(arr_quotient));
     memset(arr_dividend,0,sizeof(arr_dividend));
@@ -169,7 +169,7 @@ int main()
     string a,  b;
     cin >> a >> b;
 
-    slove(a,b);
+    solve(a,b);
 
     return 0;
 }

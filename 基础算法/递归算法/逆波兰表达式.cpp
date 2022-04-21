@@ -28,15 +28,15 @@ bool isOperation(const string&str)
     return false;
 }
 
-double slove()
+double solve()
 {
     string str;
     cin >> str;
 
     if(isOperation(str))
     {
-        double a = slove();
-        double b = slove();
+        double a = solve();
+        double b = solve();
         switch (str[0])
         {
             case '+':
@@ -57,6 +57,6 @@ double slove()
 int main()
 {
 
-    printf("%f\n",slove());
+    printf("%f\n",solve());
     return 0;
 }

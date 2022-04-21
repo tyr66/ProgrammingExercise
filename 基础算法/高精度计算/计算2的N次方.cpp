@@ -4,7 +4,7 @@
 
 using namespace std;
 
-void slove(int);
+void solve(int);
 
 char mark[2] = {1,2};
 char res_a[100];
@@ -87,7 +87,7 @@ void multSelf()
     mult(res_a,res_copy);
 }
 
-void slove(int N)
+void solve(int N)
 {
 
     if(N == 1)
@@ -97,7 +97,7 @@ void slove(int N)
         return;
     }
 
-    slove(N/2);
+    solve(N/2);
     multSelf();
     
     if(N%2!=0)
@@ -120,7 +120,7 @@ int main()
     int N;
     cin >> N;
 
-    slove(N);
+    solve(N);
     print(res_a,res_a[0]); 
 
     return 0;

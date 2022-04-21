@@ -70,7 +70,7 @@ void reverse(string&str,int len)
     }
 }
 
-int slove(int n,string&src)
+int solve(int n,string&src)
 {
     string str,revStr;
     int maxSz = str.size() + 30;
@@ -128,7 +128,7 @@ int main()
     cin >>n;
     cin >> str;
 
-    int res = slove(n,str);
+    int res = solve(n,str);
 
 
      if(res>0)

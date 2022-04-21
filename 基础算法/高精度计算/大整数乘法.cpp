@@ -4,7 +4,7 @@
 
 using namespace std;
 
-void slove(int);
+void solve(int);
 
 char arr_a[40000];
 char arr_b[200];
