@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-double f(double x)
+double S(double x)
 {
     /* float res = x - 15;
     res = x * res + 85;
@@ -20,7 +20,7 @@ int main()
     {
         double mid = (max_v + min_v) / 2;
 
-        if(f(min_v)*f(mid)<=0)
+        if(S(min_v)*S(mid)<=0)
         {
             max_v = mid;
         }else
